@@ -1,0 +1,5 @@
+.container-header-mobile {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 16px;
+}
