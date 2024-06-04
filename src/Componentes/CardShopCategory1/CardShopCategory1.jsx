@@ -1,18 +1,17 @@
-import "./CardFreteFree.css";
+import "./CardShopCategory1.css";
 
-const CardFreteFree = (props) => {
+const CardShopCategory1 = (props) => {
   return (
-    <div className="container-card-frete-free">
+    <div className="container-card-shop-1">
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet"
       />
-      <img src={props.imgFrete} alt="" />
-      <p>{props.paragraph}</p>
+      <h2>{props.tittle}</h2>
     </div>
   );
 };
 
-export default CardFreteFree;
+export default CardShopCategory1;
