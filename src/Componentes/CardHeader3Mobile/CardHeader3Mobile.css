@@ -1,1 +1,5 @@
-
+.container-card-header-3-mobile {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
