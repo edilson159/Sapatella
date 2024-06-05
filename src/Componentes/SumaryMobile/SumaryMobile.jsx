@@ -4,7 +4,7 @@ import "./SumaryMobile.css";
 
 const SumaryMobile = () => {
   return (
-    <section>
+    <section className="container-sumary-mobile">
       {DataSumaryMobile.map((props) => (
         <CardSumaryMobile
           key={props.id}
