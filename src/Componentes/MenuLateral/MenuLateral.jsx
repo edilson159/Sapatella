@@ -1,6 +1,7 @@
 import "./MenuLateral.css";
 import { useState, useEffect } from "react";
 import UseDrawerContext from "../../Hook/UseDrawerContext";
+import SumaryMobile from "../SumaryMobile/SumaryMobile";
 
 function Drawer({ Open }) {
   return (
@@ -10,7 +11,9 @@ function Drawer({ Open }) {
       } container-drawer`}
     >
       <div className="container-drawer-p1" />
-      <div className="container-drawer-p2 "></div>
+      <div className="container-drawer-p2 ">
+        <SumaryMobile />
+      </div>
     </div>
   );
 }
