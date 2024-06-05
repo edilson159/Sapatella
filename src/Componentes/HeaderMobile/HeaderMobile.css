@@ -5,3 +5,39 @@
   padding: 20px 0;
   width: 100%;
 }
+
+.not-actived:hover .container-header-mobile {
+  background: #ffffffc2;
+}
+
+.not-actived:hover .container-menu-hamburguer-open {
+  filter: invert(0);
+}
+
+.not-actived:hover .container-img-card-header-2 {
+  filter: invert(0);
+}
+
+.container-header-mobile-fixo {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  width: 100%;
+  background-color: #ffffffc2;
+}
+
+.container-header-mobile-fixo .container-img-card-header-2 {
+  filter: invert(0);
+}
+
+.actived .container-header-mobile {
+  background-color: #ffffff;
+}
+
+.actived .container-header-mobile-fixo {
+  background-color: #ffffff;
+}
+.actived .container-img-card-header-2 {
+  filter: invert(0);
+}
