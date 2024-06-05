@@ -60,7 +60,7 @@ const CardSumaryMobile = (props) => {
           <p>{props.option9}</p>
         </div>
         <div className="item-card item10">
-          <p>{props.option10}</p>
+          <a href="##">{props.option10}</a>
         </div>
       </details>
       <details>
@@ -107,7 +107,7 @@ const CardSumaryMobile = (props) => {
           <p>{props.option9}</p>
         </div>
         <div className="item-card item10">
-          <p>{props.option10}</p>
+          <a href="##">{props.option10}</a>
         </div>
       </details>
       <details>
@@ -154,7 +154,7 @@ const CardSumaryMobile = (props) => {
           <p>{props.option9}</p>
         </div>
         <div className="item-card item10">
-          <p>{props.option10}</p>
+          <a href="##">{props.option10}</a>
         </div>
       </details>
       <details>
@@ -201,7 +201,7 @@ const CardSumaryMobile = (props) => {
           <p>{props.option9}</p>
         </div>
         <div className="item-card item10">
-          <p>{props.option10}</p>
+          <a href="##">{props.option10}</a>
         </div>
       </details>
       <details>
@@ -248,7 +248,7 @@ const CardSumaryMobile = (props) => {
           <p>{props.option9}</p>
         </div>
         <div className="item-card item10">
-          <p>{props.option10}</p>
+          <a href="##">{props.option10}</a>
         </div>
       </details>
       <details>
@@ -295,7 +295,7 @@ const CardSumaryMobile = (props) => {
           <p>{props.option9}</p>
         </div>
         <div className="item-card item10">
-          <p>{props.option10}</p>
+          <a href="##">{props.option10}</a>
         </div>
       </details>
       <div className="item-card-sumary-mobile-7">{props.name7}</div>
