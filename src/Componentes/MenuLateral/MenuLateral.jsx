@@ -18,7 +18,7 @@ function Drawer({ Open }) {
   );
 }
 
-const MenuLateral = (props, key) => {
+const MenuLateral = () => {
   const [scrolledM, setScroulled] = useState(false);
 
   useEffect(() => {
@@ -37,18 +37,31 @@ const MenuLateral = (props, key) => {
     };
   }, []);
 
-  const { Open, setOpen } = UseDrawerContext();
+  const { Open, setOpen, mouseOver, mouseOut } = UseDrawerContext();
 
   return (
     <section className={scrolledM ? "scrolledM" : "container-menu-lateral"}>
-      <button
-        className={
-          Open
-            ? "container-menu-hamburguer-close"
-            : "container-menu-hamburguer-open"
-        }
-        onClick={() => setOpen(!Open)}
-      ></button>
+      {mouseOver && (
+        <button
+          className={
+            Open
+              ? "container-menu-hamburguer-close"
+              : "container-menu-hamburguer-open-w"
+          }
+          onClick={() => setOpen(!Open)}
+        ></button>
+      )}
+
+      {mouseOut && (
+        <button
+          className={
+            Open
+              ? "container-menu-hamburguer-close"
+              : "container-menu-hamburguer-open"
+          }
+          onClick={() => setOpen(!Open)}
+        ></button>
+      )}
 
       <Drawer Open={Open}></Drawer>
     </section>

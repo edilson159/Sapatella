@@ -1,12 +1,12 @@
 import "./SectionVerao.css";
 
 import CardSectionVerao from "../CardSectionVerao/CardSectionVerao";
-import DataSectionVerao from "../DataSectionVerao/DataSectionVerao.jsx";
+import dataSapatella from "../DataSapatella/DataSapatela.js";
 
 const SectionVerao = () => {
   return (
     <section className="container-section-verao">
-      {DataSectionVerao.map((props) => (
+      {dataSapatella.map((props) => (
         <CardSectionVerao
           key={props.id}
           imgVerao={props.imgVerao}

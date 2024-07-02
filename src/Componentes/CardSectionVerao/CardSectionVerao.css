@@ -1,9 +1,7 @@
 .container-card-section-verao {
-  position: relative;
-  width: 93%;
+  width: 90%;
   font-family: DM Sans;
-  top: 24px;
-  left: 15px;
+  padding: 16px;
 }
 
 .container-card-section-verao .container-card-section-verao-img {

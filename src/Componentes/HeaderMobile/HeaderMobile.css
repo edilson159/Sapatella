@@ -1,3 +1,7 @@
+.fixo {
+  position: fixed;
+}
+
 .container-header-mobile {
   position: absolute;
   display: flex;
@@ -40,4 +44,13 @@
 }
 .actived .container-img-card-header-2 {
   filter: invert(0);
+}
+
+.container-img-card-header-2 {
+  filter: invert(1);
+}
+.container-card-header-3-mobile {
+  display: flex;
+  gap: 24px;
+  align-items: center;
 }

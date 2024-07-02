@@ -1,10 +1,10 @@
 import CardShopCategory from "../CardShopCategory/CardShopCategory";
 import CardShopCategory1 from "../CardShopCategory1/CardShopCategory1";
-import DataShopCategory from "../DataShopCategory/DataShopCategory";
+import dataSapatella from "../DataSapatella/DataSapatela";
 import "./ShopCategory.css";
 
 const ShopCategory = () => {
-  const DataShopCategoryTittle = DataShopCategory.slice(0, 1);
+  const DataShopCategoryTittle = dataSapatella.slice(0, 1);
   return (
     <section className="container-shop-category">
       <div className="container-Card-shop-category-1">
@@ -13,7 +13,7 @@ const ShopCategory = () => {
         ))}
       </div>
       <div className="container-Card-shop">
-        {DataShopCategory.map((props) => (
+        {dataSapatella.map((props) => (
           <CardShopCategory
             key={props.id}
             tittle={props.tittle}

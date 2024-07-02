@@ -50,7 +50,18 @@
 }
 
 .container-menu-hamburguer-open {
-  background: url("/public/img/buttonOpen.png");
+  background: url("/public/img/buttonOpenW.svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  border: none;
+  z-index: 100000;
+  top: -5px;
+  background-size: 24px;
+}
+
+.container-menu-hamburguer-open-w {
+  background: url("/public/img/buttonOpen.svg");
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;

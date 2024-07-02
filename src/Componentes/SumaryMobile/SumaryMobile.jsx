@@ -1,33 +1,54 @@
-import CardSumaryMobile from "../CardSumaryMobile/CardSumaryMobile";
-import DataSumaryMobile from "../DataSumaryMobile/DataSumaryMobile";
+import { useState } from "react";
+import dataSapatella from "../DataSapatella/DataSapatela";
 import "./SumaryMobile.css";
 
 const SumaryMobile = () => {
+  const [SumaryOpen, SetSumaryOpen] = useState(false);
   return (
     <section className="container-sumary-mobile">
-      {DataSumaryMobile.map((props) => (
-        <CardSumaryMobile
-          key={props.id}
-          name={props.name}
-          name2={props.name2}
-          name3={props.name3}
-          name4={props.name4}
-          name5={props.name5}
-          name6={props.name6}
-          name7={props.name7}
-          option={props.option}
-          option2={props.option2}
-          option3={props.option3}
-          option4={props.option4}
-          option5={props.option5}
-          option6={props.option6}
-          option7={props.option7}
-          option8={props.option8}
-          option9={props.option9}
-          option10={props.option10}
-          icone={props.icone}
-        />
-      ))}
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet"
+      />
+      {dataSapatella[0].summaryMenuMobile.map(
+        ({ name, icone, children }, index) => (
+          <details key={index}>
+            <summary
+              onClick={() => SetSumaryOpen(!SumaryOpen)}
+              className={
+                name === "Sandálias" || name === "OFF"
+                  ? "item-card-sumary-mobile-1 pink"
+                  : "item-card-sumary-mobile-1"
+              }
+            >
+              {name}
+              <img
+                className={
+                  SumaryOpen
+                    ? "img-card-sumary-mobile-open"
+                    : "img-card-sumary-mobile"
+                }
+                src={icone}
+                alt=""
+              />
+            </summary>
+            {children.map(({ name }, index) => (
+              <div
+                key={index}
+                className={
+                  name === "Ver todos"
+                    ? "item-card item10 pink"
+                    : "item-card item1 "
+                }
+              >
+                {name === "Ver todos" ? <a href="##">{name}</a> : <p>{name}</p>}
+              </div>
+            ))}
+          </details>
+        )
+      )}
     </section>
   );
 };
