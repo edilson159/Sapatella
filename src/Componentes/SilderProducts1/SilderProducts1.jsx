@@ -60,7 +60,6 @@ const SilderProducts1 = () => {
       <Slider {...settings}>
         {dataSapatella[0].showcaseProducts1.map(
           ({
-            title,
             image,
             discount,
             heartIcon,
