@@ -1,25 +1,26 @@
-import CardShopCategory from "../CardShopCategory/CardShopCategory";
-import CardShopCategory1 from "../CardShopCategory1/CardShopCategory1";
 import dataSapatella from "../DataSapatella/DataSapatela";
 import "./ShopCategory.css";
 
 const ShopCategory = () => {
-  const DataShopCategoryTittle = dataSapatella.slice(0, 1);
   return (
     <section className="container-shop-category">
-      <div className="container-Card-shop-category-1">
-        {DataShopCategoryTittle.map((props) => (
-          <CardShopCategory1 key={props.id} tittle={props.tittle} />
-        ))}
-      </div>
-      <div className="container-Card-shop">
-        {dataSapatella.map((props) => (
-          <CardShopCategory
-            key={props.id}
-            tittle={props.tittle}
-            imgCategory={props.imgCategory}
-            paragraph={props.paragraph}
-          />
+      {dataSapatella.map((props, index) => (
+        <div key={index} className="container-Card-shop-category-1">
+          <div className="container-card-shop-1">
+            <h2>{props.shopCategory[0].tittle}</h2>
+          </div>
+        </div>
+      ))}
+      <div className="container-shop-category-main">
+        {dataSapatella[0].shopCategory.map(({ description, img }, index) => (
+          <div className="container-shop-category-item" key={index}>
+            <div className="container-Card-shop">
+              <div className="container-card-shop-category">
+                <img src={img} alt="" />
+                <p>{description}</p>
+              </div>
+            </div>
+          </div>
         ))}
       </div>
     </section>

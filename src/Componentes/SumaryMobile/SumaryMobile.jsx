@@ -6,12 +6,6 @@ const SumaryMobile = () => {
   const [SumaryOpen, SetSumaryOpen] = useState(false);
   return (
     <section className="container-sumary-mobile">
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-        rel="stylesheet"
-      />
       {dataSapatella[0].summaryMenuMobile.map(
         ({ name, icone, children }, index) => (
           <details key={index}>

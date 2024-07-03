@@ -10,18 +10,24 @@ const HeaderMobile = () => {
     UseDrawerContext();
 
   function handleMouseHover() {
-    setMouseOver(!mouseOver);
-    setMouseOut(!mouseOut);
+    if (window.scrollY > 40) {
+      setMouseOut(true);
+      setMouseOver(false);
+    } else {
+      setMouseOver(!mouseOver);
+      setMouseOut(!mouseOut);
+    }
   }
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
+      if (window.scrollY > 40) {
         setScrolled(true);
-        setMouseOver(false);
+        setMouseOut(true);
       } else {
         setScrolled(false);
         setMouseOver(true);
+        setMouseOut(false);
       }
     };
 
@@ -66,13 +72,10 @@ const HeaderMobile = () => {
                       )
                     )}
 
-                  {mouseOut ||
-                    (scrolled &&
-                      props.headerMobile[0].imagesActive.map(
-                        ({ img }, index) => (
-                          <img key={index} src={img} alt="Icone de um lupa" />
-                        )
-                      ))}
+                  {mouseOut &&
+                    props.headerMobile[0].imagesActive.map(({ img }, index) => (
+                      <img key={index} src={img} alt="Icone de um lupa" />
+                    ))}
                 </div>
               </div>
             </React.Fragment>

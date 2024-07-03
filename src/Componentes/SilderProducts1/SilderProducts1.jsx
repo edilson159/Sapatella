@@ -1,6 +1,5 @@
 import "./SilderProducts1.css";
 import Slider from "react-slick";
-import CardVitriniProducts1 from "../CardVitriniProducts1/CardVitriniProducts1.jsx";
 import dataSapatella from "../DataSapatella/DataSapatela.js";
 
 const SilderProducts1 = () => {
@@ -17,7 +16,6 @@ const SilderProducts1 = () => {
           infinite: true,
           slidesToShow: 3,
           slidesToScroll: 3,
-          arrows: false,
         },
       },
       {
@@ -27,7 +25,6 @@ const SilderProducts1 = () => {
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2,
-          arrows: false,
         },
       },
       {
@@ -36,13 +33,12 @@ const SilderProducts1 = () => {
           infinite: false,
           slidesToShow: 2,
           slidesToScroll: 2,
-          arrows: false,
         },
       },
     ],
   };
   return (
-    <section>
+    <section className="container-vitrini-products">
       <link
         rel="stylesheet"
         type="text/css"
@@ -55,20 +51,52 @@ const SilderProducts1 = () => {
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
       />
 
+      {dataSapatella.map((props) => (
+        <div className="container-card-vitrini-products-1-title">
+          <h2>{props.showcaseProducts1[0].title}</h2>
+        </div>
+      ))}
+
       <Slider {...settings}>
-        {dataSapatella.map((props) => (
-          <CardVitriniProducts1
-            key={props.id}
-            title={props.title}
-            discount={props.discount}
-            heartIcon={props.heartIcon}
-            image={props.image}
-            name={props.name}
-            currentPrice={props.currentPrice}
-            oldPrice={props.oldPrice}
-            description={props.description}
-          />
-        ))}
+        {dataSapatella[0].showcaseProducts1.map(
+          ({
+            title,
+            image,
+            discount,
+            heartIcon,
+            name,
+            description,
+            currentPrice,
+            oldPrice,
+          }) => (
+            <div className="container-card-vitrini-products-1">
+              <div className="container-card-vitrini-products-1-discount">
+                <p>{discount}</p>
+              </div>
+              <img
+                className="container-card-vitrini-products-img-heart"
+                src={heartIcon}
+                alt="Icone de um coração"
+              />
+
+              <div className="container-card-vitrini-products-1-img">
+                <img src={image} alt="Imagem do produto" />
+              </div>
+
+              <div className="container-card-vitrini-products-1-description">
+                <div className="container-card-vitrini-products-1-description-name">
+                  <p>{name}</p>
+                </div>
+                <div className="container-card-vitrini-products-1-description-price">
+                  <p>{currentPrice}</p>
+
+                  <p>{oldPrice}</p>
+                </div>
+                <p className="container-option-the-payment">{description}</p>
+              </div>
+            </div>
+          )
+        )}
       </Slider>
     </section>
   );

@@ -19,14 +19,20 @@ function Drawer({ Open }) {
 }
 
 const MenuLateral = () => {
+  const { Open, setOpen, setMouseOver, mouseOver, setMouseOut, mouseOut } =
+    UseDrawerContext();
   const [scrolledM, setScroulled] = useState(false);
 
   useEffect(() => {
     const handleScroull = () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY > 40) {
         setScroulled(true);
+        setMouseOut(true);
+        setMouseOver(false);
       } else {
         setScroulled(false);
+        setMouseOver(true);
+        setMouseOut(false);
       }
     };
 
@@ -36,8 +42,6 @@ const MenuLateral = () => {
       window.removeEventListener("scroll", handleScroull);
     };
   }, []);
-
-  const { Open, setOpen, mouseOver, mouseOut } = UseDrawerContext();
 
   return (
     <section className={scrolledM ? "scrolledM" : "container-menu-lateral"}>

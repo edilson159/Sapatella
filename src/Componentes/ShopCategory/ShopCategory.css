@@ -5,8 +5,41 @@
   justify-content: center;
 }
 
-.container-Card-shop {
+.container-shop-category-main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
+  width: 100%;
+}
+
+.container-shop-category-item {
+  width: 100%;
+}
+
+.container-card-shop-1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-card-shop-1 h2 {
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26.04px;
+  text-align: center;
+}
+
+.container-card-shop-category {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.23px;
+  text-align: center;
+  color: #4f4f4f;
+}
+
+.container-card-shop-category img {
+  width: 80%;
 }
