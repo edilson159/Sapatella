@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { DrawerContext } from "../Context/DrawerContext";
 import HeaderMobile from "../Componentes/HeaderMobile/HeaderMobile";
-import BannerMobile from "../Componentes/BannerMobile/BannerMobile";
+import Banner from "../Componentes/Banner/Banner";
 import ShopCategory from "../Componentes/ShopCategory/ShopCategory";
 import SectionVerao from "../Componentes/SectionVerao/SectionVerao";
 import Benefit from "../Componentes/Benefit/Benefit";
 import ShowcaseProducts1 from "../Componentes/Showcases/ShowcaseProducts1";
 import ShowcaseExhibition1 from "../Componentes/Showcases/ShowcaseExhibition1";
+import Banner2 from "../Componentes/Banner2/Banner2";
+import ShowcaseProducts2 from "../Componentes/Showcases/ShowcaseProducts2";
 
 const Home = () => {
   const [Open, setOpen] = useState(false);
@@ -18,12 +20,14 @@ const Home = () => {
     >
       <section>
         <HeaderMobile />
-        <BannerMobile />
+        <Banner />
         <Benefit />
         <ShopCategory />
         <SectionVerao />
         <ShowcaseProducts1 />
         <ShowcaseExhibition1 />
+        <Banner2 />
+        <ShowcaseProducts2 />
       </section>
     </DrawerContext.Provider>
   );

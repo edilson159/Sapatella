@@ -1,0 +1,147 @@
+.container-vitrini-products-2 {
+  margin: 0px 3px 64px 15px;
+}
+
+.container-vitrini-products-2 button.slick-arrow.slick-prev {
+  position: absolute;
+  z-index: 10000;
+  background-image: url(/public/img/arrowLeft.png);
+  background-repeat: no-repeat;
+  background-position: 18px;
+  background-size: 8px;
+  display: block;
+  background-color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  top: 80px;
+  left: 0px;
+}
+
+.container-vitrini-products-2 .slick-prev:before {
+  color: transparent;
+  opacity: 0 !important ;
+}
+.container-vitrini-products-2 button.slick-arrow.slick-next {
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  color: transparent;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url(/public/img/arrowRigth.png);
+  background-position: 18px;
+  background-size: 8px;
+  display: block;
+  background-color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  z-index: 10000;
+}
+
+.container-vitrini-products-2 .slick-next:before {
+  color: transparent;
+  opacity: 0;
+}
+
+.container-card-vitrini-products-2 {
+  position: relative;
+  margin: 6px;
+}
+
+.container-card-vitrini-products-2-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-vitrini-products .container-card-vitrini-products-2-title h2 {
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26.04px;
+  text-align: center;
+  color: #4f4f4f;
+}
+
+.container-card-vitrini-products-2-p1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-card-vitrini-products-2-discount {
+  font-family: DM Sans;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cf215b;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 65px;
+  height: 24px;
+  z-index: 100000;
+}
+
+.container-card-vitrini-products-2-img-heart {
+  position: absolute;
+  top: 10px;
+  right: 35px;
+  z-index: 10000;
+}
+
+.container-card-vitrini-products-2-img {
+  width: 100%;
+}
+
+.container-card-vitrini-products-2-img img {
+  width: 90%;
+}
+
+.container-card-vitrini-products-2-description {
+  font-family: DM Sans;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.container-card-vitrini-products-2-description p {
+  margin: unset;
+}
+
+.container-card-vitrini-products-2-description-name {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  width: 131px;
+}
+
+.container-card-vitrini-products-2-description-price {
+  display: flex;
+  gap: 7px;
+  width: 160px;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+.container-option-the-payment {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.62px;
+  text-align: left;
+}
