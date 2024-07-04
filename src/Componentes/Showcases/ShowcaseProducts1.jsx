@@ -1,8 +1,8 @@
-import "./SilderProducts1.css";
+import "./ShowcaseProducts1.css";
 import Slider from "react-slick";
 import dataSapatella from "../DataSapatella/DataSapatela.js";
 
-const SilderProducts1 = () => {
+const ShowcaseProducts1 = () => {
   const settings = {
     infinite: true,
     speed: 500,
@@ -101,4 +101,4 @@ const SilderProducts1 = () => {
   );
 };
 
-export default SilderProducts1;
+export default ShowcaseProducts1;

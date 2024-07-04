@@ -497,6 +497,36 @@ const dataSapatella = [
         oldPrice: "R$ 200,00",
       },
     ],
+    showcaseExhibition1: [
+      {
+        title: "Rasteiras & Birkens",
+        description:
+          "A categoria de Sandália Rasteira da Sapatella é um verdadeiro paraíso para os amantes de conforto e estilo.",
+      },
+      {
+        title: "Eu quero",
+        link: "//",
+        image: "../img/imageExhibition1.svg",
+        icon: "../img/arrowIndication.png",
+      },
+      {
+        title: "Sandálias",
+        link: "//",
+        image: "../img/imageExhibition2.svg",
+        icon: "../img/arrowIndication.png",
+      },
+      {
+        title: "Tênis",
+        description:
+          "Os tênis femininos se tornaram um item básico na moda e nos calçados do dia a dia.",
+        image: "../img/imageExhibition3.svg",
+      },
+      {
+        title: "Conferir",
+        link: "//",
+        icon: "../img/arrowIndication.png",
+      },
+    ],
   },
 ];
 
