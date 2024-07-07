@@ -1,0 +1,40 @@
+.container-section-sapatella {
+  width: 100%;
+}
+
+.container-section-sapatella .container-card-section-sapatella {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 32px;
+  padding: 64px 0px;
+}
+
+.container-card-section-sapatella-p1 {
+  padding: 0px 40px;
+}
+
+.container-card-section-sapatella-p1 h2 {
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26.04px;
+  text-align: center;
+}
+
+.container-card-section-sapatella-p1 p {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+
+.container-card-section-sapatella-p2 {
+  margin: 0px 40px;
+}
+
+.container-card-section-sapatella-p2 img {
+  width: 100%;
+}

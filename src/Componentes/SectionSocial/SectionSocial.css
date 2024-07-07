@@ -1,0 +1,12 @@
+.container-section-social {
+  display: flex;
+  gap: 32px;
+  width: 100%;
+}
+
+.container-card-section-social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 40px 0px 40px 15px;
+}

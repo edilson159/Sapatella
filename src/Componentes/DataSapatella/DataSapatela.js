@@ -689,6 +689,47 @@ const dataSapatella = [
         oldPrice: "R$ 200,00",
       },
     ],
+    banner3: [
+      {
+        image: "../img/Banner3.svg",
+      },
+    ],
+    sectionSpatella: [
+      {
+        title: "Sobre a Sapatella",
+        description:
+          "Oi, a gente já se conhece? Muito prazer, Sapatella! Somos uma Marca de moda que oferece sapatos e acessórios feitos para te encantar. Aqui tem atenção de verdade, produtos com o seu jeito e ritmo. Chega mais, fique à vontade. Queremos ver você confortável e livre para ser como quiser e ocupar o espaço que bem entender. O que nos une e contagia é a vontade de brilhar e ser feliz. Mais que mulheres, somos amigas. Sapatella. Vamos juntas?",
+        image: "../img/bannerSapatella.svg",
+      },
+    ],
+    cadastro: [
+      {
+        description: "Cadastre-se e ganhe ",
+        span: "R$20 OFF",
+        input: "text",
+        placeholder: "Nome",
+        description2: "na sua primeira compra!",
+        button: "Cadastrar",
+      },
+      {
+        input: "email",
+        placeholder: "E-mail",
+      },
+    ],
+    sectionSocial: [
+      {
+        image: "../img/logoSapatellaG.svg",
+      },
+      {
+        image: "../img/logoInstagram.svg",
+      },
+      {
+        image: "../img/logoWhatsapp.svg",
+      },
+      {
+        image: "../img/logoFacebook.svg",
+      },
+    ],
   },
 ];
 
