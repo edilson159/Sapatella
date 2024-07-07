@@ -53,7 +53,7 @@ const ShowcaseProducts2 = () => {
 
       {dataSapatella.map((props) => (
         <div className="container-card-vitrini-products-2-title">
-          <h2>{props.showcaseProducts1[0].title}</h2>
+          <h2>{props.showcaseProducts2[0].title}</h2>
         </div>
       ))}
 
