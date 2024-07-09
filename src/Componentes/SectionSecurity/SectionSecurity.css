@@ -1,0 +1,17 @@
+.container-section-security {
+  width: 100%;
+}
+
+.container-card-section-security {
+  padding: 24px 0px 24px 15px;
+  border-bottom: 1px solid #b0b0b0;
+}
+
+.container-card-section-security h2 {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #4f4f4f;
+}

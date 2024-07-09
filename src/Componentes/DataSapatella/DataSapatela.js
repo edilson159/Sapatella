@@ -730,6 +730,134 @@ const dataSapatella = [
         image: "../img/logoFacebook.svg",
       },
     ],
+    sectionInformation: [
+      {
+        icon: "../img/imgArrow.png",
+        title: "SOBRE NÓS",
+        children: [
+          {
+            name: "Quem somos",
+          },
+          {
+            name: "Mapa do site",
+          },
+          {
+            name: "Casas Sapatella",
+          },
+          {
+            name: "Seja um parceiro",
+          },
+          {
+            name: "Seja um Franqueado",
+          },
+          {
+            name: "Seja um afiliado",
+          },
+          {
+            name: "Trabalhe com a gente",
+          },
+        ],
+      },
+      {
+        icon: "../img/imgArrow.png",
+        title: "MINHA CONTA",
+        children: [
+          {
+            name: "Quem somos",
+          },
+          {
+            name: "Mapa do site",
+          },
+          {
+            name: "Casas Sapatella",
+          },
+          {
+            name: "Seja um parceiro",
+          },
+          {
+            name: "Seja um Franqueado",
+          },
+          {
+            name: "Seja um afiliado",
+          },
+          {
+            name: "Trabalhe com a gente",
+          },
+        ],
+      },
+      {
+        icon: "../img/imgArrow.png",
+        title: "SOBRE NÓS",
+        children: [
+          {
+            name: "Quem somos",
+          },
+          {
+            name: "Mapa do site",
+          },
+          {
+            name: "Casas Sapatella",
+          },
+          {
+            name: "Seja um parceiro",
+          },
+          {
+            name: "Seja um Franqueado",
+          },
+          {
+            name: "Seja um afiliado",
+          },
+          {
+            name: "Trabalhe com a gente",
+          },
+        ],
+      },
+    ],
+    sectionPayment: [
+      {
+        title: "FORMAS DE PAGAMENTO",
+        images: [
+          {
+            image: "../img/imgVisa.svg",
+          },
+          {
+            image: "../img/imgMastercard.svg",
+          },
+          {
+            image: "../img/imgHipercard.svg",
+          },
+          {
+            image: "../img/imgAmex.svg",
+          },
+          {
+            image: "../img/imgElo.svg",
+          },
+          {
+            image: "../img/imgPix2.svg",
+          },
+        ],
+      },
+    ],
+    sectionSecurity: [
+      {
+        title: "SEGURANÇA",
+        image: "../img/imgSecurity.svg",
+      },
+    ],
+    footer: [
+      {
+        description:
+          "Somos Sonho LTA - Estrada do Campo D'areia, 182 Pechincha - Rio de Janeiro/RJ - CEP: 22.743-310 CNPJ:28.445.729/0081-75 | © 2024 Todos dos direitos reservados",
+        images: [
+          {
+            image: "../img/imgFooter1.svg",
+          },
+          {
+            image: "../img/imgFooter2.svg",
+          },
+        ],
+      },
+    ],
   },
 ];
 

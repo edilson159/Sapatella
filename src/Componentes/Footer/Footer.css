@@ -1,0 +1,29 @@
+.container-footer {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+}
+
+.container-card-footer {
+  display: grid;
+  justify-content: center;
+  gap: 24px;
+  padding: 24px 0px;
+  margin-left: 15px;
+  width: 90%;
+}
+
+.container-card-footer p {
+  font-family: DM Sans;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: #4f4f4f;
+}
+
+.container-card-footer-images {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}

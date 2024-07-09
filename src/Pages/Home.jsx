@@ -13,6 +13,10 @@ import Banner3 from "../Componentes/Banners/Banner3";
 import SectionSapatella from "../Componentes/SectionSapatella/SectionSapatella";
 import Cadastro from "../Componentes/Cadastro/Cadastro";
 import SectionSocial from "../Componentes/SectionSocial/SectionSocial";
+import SectionInformation from "../Componentes/SectionInformation/SectionInformation";
+import SectionPayment from "../Componentes/SectionPayment/SectionPayment";
+import SectionSecurity from "../Componentes/SectionSecurity/SectionSecurity";
+import Footer from "../Componentes/Footer/Footer";
 
 const Home = () => {
   const [Open, setOpen] = useState(false);
@@ -36,6 +40,10 @@ const Home = () => {
         <SectionSapatella />
         <Cadastro />
         <SectionSocial />
+        <SectionInformation />
+        <SectionPayment />
+        <SectionSecurity />
+        <Footer />
       </section>
     </DrawerContext.Provider>
   );

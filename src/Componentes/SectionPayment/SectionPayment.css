@@ -1,0 +1,26 @@
+.container-section-payment {
+  width: 100%;
+}
+
+.container-card-section-payment {
+  padding: 24px 0px;
+  width: 90%;
+  margin-left: 15px;
+  border-bottom: 1px solid #b0b0b0;
+}
+
+.container-card-section-payment h2 {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #4f4f4f;
+}
+
+.container-card-section-payment-images {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 8px;
+  width: 104px;
+}

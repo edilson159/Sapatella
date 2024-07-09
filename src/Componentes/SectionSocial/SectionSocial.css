@@ -8,5 +8,8 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 40px 0px 40px 15px;
+  padding: 40px 0px 40px 0px;
+  margin-left: 15px;
+  border-bottom: 1px solid #b0b0b0;
+  width: 90%;
 }
