@@ -50,8 +50,8 @@ const Benefit = () => {
         rel="stylesheet"
       />
       <Slider {...settings}>
-        {dataSapatella[0].benefit.map(({ img, description }) => (
-          <div>
+        {dataSapatella[0].benefit.map(({ img, description }, index) => (
+          <div key={index}>
             <div className="container-card-frete-free">
               <div className="container-card-frete-free-item">
                 <img src={img} alt="" />

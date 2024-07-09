@@ -11,7 +11,7 @@ const SectionVerao = () => {
         rel="stylesheet"
       />
       {dataSapatella[0].sectionSummer.map(
-        ({ img, title, description, button, index }) => (
+        ({ img, title, description, button }, index) => (
           <div key={index} className="container-card-section-verao">
             <img
               className="container-card-section-verao-img"

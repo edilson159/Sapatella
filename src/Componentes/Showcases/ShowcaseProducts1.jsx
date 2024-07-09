@@ -51,24 +51,27 @@ const ShowcaseProducts1 = () => {
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
       />
 
-      {dataSapatella.map((props) => (
-        <div className="container-card-vitrini-products-1-title">
+      {dataSapatella.map((props, index) => (
+        <div key={index} className="container-card-vitrini-products-1-title">
           <h2>{props.showcaseProducts1[0].title}</h2>
         </div>
       ))}
 
       <Slider {...settings}>
         {dataSapatella[0].showcaseProducts1.map(
-          ({
-            image,
-            discount,
-            heartIcon,
-            name,
-            description,
-            currentPrice,
-            oldPrice,
-          }) => (
-            <div className="container-card-vitrini-products-1">
+          (
+            {
+              image,
+              discount,
+              heartIcon,
+              name,
+              description,
+              currentPrice,
+              oldPrice,
+            },
+            index
+          ) => (
+            <div key={index} className="container-card-vitrini-products-1">
               <div className="container-card-vitrini-products-1-discount">
                 <p>{discount}</p>
               </div>
