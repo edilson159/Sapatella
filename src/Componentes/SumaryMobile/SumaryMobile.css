@@ -1,6 +1,5 @@
 .container-sumary-mobile {
   overflow: auto;
-  height: 700px;
 }
 
 .pink {
@@ -16,15 +15,18 @@
   list-style: none;
 }
 
-.container-card-sumary-mobile details {
+.container-card-sumary-mobile .container-card-summary-mobile {
   position: relative;
+}
+
+.container-card-summary-mobile[open] .img-card-sumary-mobile {
+  transform: rotate(180deg);
 }
 
 .img-card-sumary-mobile-open {
   position: absolute;
   top: 1.5rem;
   right: 21px;
-  transform: rotate(180deg);
 }
 
 .img-card-sumary-mobile {

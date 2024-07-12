@@ -46,12 +46,12 @@ const ShowcaseExhibition1 = () => {
               <div className="container-card-showcase-exhibition1-p3-2-description">
                 <h2>{props.showcaseExhibition1[3].title}</h2>
                 <p>{props.showcaseExhibition1[3].description}</p>
-              </div>
-              <div className="container-card-showcase-exhibition1-p3-2-description-link">
-                <a href={props.showcaseExhibition1[3].link}>
-                  {props.showcaseExhibition1[4].title}
-                </a>
-                <img src={props.showcaseExhibition1[4].icon} alt="" />
+                <div className="container-card-showcase-exhibition1-p3-2-description-link">
+                  <a href={props.showcaseExhibition1[3].link}>
+                    {props.showcaseExhibition1[4].title}
+                  </a>
+                  <img src={props.showcaseExhibition1[4].icon} alt="" />
+                </div>
               </div>
             </div>
           </div>

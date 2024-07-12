@@ -22,6 +22,15 @@ const Home = () => {
   const [Open, setOpen] = useState(false);
   const [mouseOver, setMouseOver] = useState(true);
   const [mouseOut, setMouseOut] = useState(false);
+
+  function toggle() {
+    if (Open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }
+  toggle();
   return (
     <DrawerContext.Provider
       value={{ Open, setOpen, mouseOver, setMouseOver, mouseOut, setMouseOut }}

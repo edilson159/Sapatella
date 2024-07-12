@@ -14,7 +14,7 @@
   width: 45px;
   height: 45px;
   border-radius: 100%;
-  top: 80px;
+  transform: translate(0, -120%);
   left: 0px;
 }
 
@@ -24,7 +24,7 @@
 }
 .container-vitrini-products button.slick-arrow.slick-next {
   position: absolute;
-  top: 80px;
+  transform: translate(0, -120%);
   right: 0px;
   color: transparent;
   background-color: transparent;
@@ -119,12 +119,15 @@
 }
 
 .container-card-vitrini-products-1-description-name {
+  width: 131px;
+}
+
+.container-card-vitrini-products-1-description-name p {
   font-family: DM Sans;
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
   text-align: left;
-  width: 131px;
 }
 
 .container-card-vitrini-products-1-description-price {

@@ -19,14 +19,11 @@
   color: #4f4f4f;
   list-style: none;
 }
-
-.container-card-section-information-summary .img-arrow-not-open {
-  position: absolute;
-  right: 27px;
-}
-.container-card-section-information-summary .img-arrow-open {
-  position: absolute;
+.container-card-section-information[open] .img-arrow {
   transform: rotate(180deg);
+}
+.container-card-section-information-summary .img-arrow {
+  position: absolute;
   right: 27px;
 }
 

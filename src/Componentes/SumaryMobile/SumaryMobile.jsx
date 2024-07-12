@@ -8,7 +8,7 @@ const SumaryMobile = () => {
     <section className="container-sumary-mobile">
       {dataSapatella[0].summaryMenuMobile.map(
         ({ name, icone, children }, index) => (
-          <details key={index}>
+          <details className="container-card-summary-mobile" key={index}>
             <summary
               onClick={() => SetSumaryOpen(!SumaryOpen)}
               className={
@@ -18,15 +18,7 @@ const SumaryMobile = () => {
               }
             >
               {name}
-              <img
-                className={
-                  SumaryOpen
-                    ? "img-card-sumary-mobile-open"
-                    : "img-card-sumary-mobile"
-                }
-                src={icone}
-                alt=""
-              />
+              <img className="img-card-sumary-mobile" src={icone} alt="" />
             </summary>
             {children.map(({ name }, index) => (
               <div

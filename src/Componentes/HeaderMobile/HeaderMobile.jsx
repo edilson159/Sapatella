@@ -22,7 +22,6 @@ const HeaderMobile = () => {
   function handleMouseHoverOfSecurity() {
     setMouseOver(false);
     setMouseOut(true);
-    console.log("funcionou");
   }
 
   useEffect(() => {

@@ -17,12 +17,8 @@ const SectionInformation = () => {
               onClick={togleOpen}
               className="container-card-section-information-summary"
             >
-              {title}{" "}
-              <img
-                className={open ? "img-arrow-open" : "img-arrow-not-open"}
-                src={icon}
-                alt=""
-              />
+              {title}
+              <img className="img-arrow" src={icon} alt="" />
             </summary>
             {children.map(({ name }, index) => (
               <div
