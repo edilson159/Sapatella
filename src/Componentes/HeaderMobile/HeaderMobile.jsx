@@ -45,8 +45,8 @@ const HeaderMobile = () => {
 
   return (
     <section
-      onMouseOver={handleMouseHover}
-      onMouseOut={handleMouseHover}
+      onMouseEnter={handleMouseHover}
+      onMouseLeave={handleMouseHover}
       className={scrolled ? "fixo" : ""}
     >
       <div className={Open ? "actived" : "not-actived"}>
