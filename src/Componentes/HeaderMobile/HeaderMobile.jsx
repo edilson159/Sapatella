@@ -47,7 +47,7 @@ const HeaderMobile = () => {
     <section
       onMouseEnter={handleMouseHover}
       onMouseLeave={handleMouseHover}
-      className={scrolled ? "fixo" : ""}
+      className={scrolled ? "fixo" : "container-card-header-mobile"}
     >
       <div className={Open ? "actived" : "not-actived"}>
         <div

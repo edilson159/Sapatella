@@ -1,3 +1,8 @@
+.container-card-header-mobile {
+  position: relative;
+  z-index: 10000000;
+}
+
 .fixo {
   position: fixed;
   z-index: 1000000;

@@ -38,6 +38,7 @@
 }
 
 .container-drawer-p2 {
+  overflow: auto;
   position: fixed;
   top: 64px;
   left: 0;
