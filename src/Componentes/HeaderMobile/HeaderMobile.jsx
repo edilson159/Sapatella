@@ -19,11 +19,6 @@ const HeaderMobile = () => {
     }
   }
 
-  function handleMouseHoverOfSecurity() {
-    setMouseOver(false);
-    setMouseOut(true);
-  }
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 40) {
@@ -63,7 +58,6 @@ const HeaderMobile = () => {
           {dataSapatella.map((props, index) => (
             <React.Fragment key={index}>
               <img
-                onMouseOver={handleMouseHoverOfSecurity}
                 className="container-img-card-header-2"
                 src={props.headerMobile[0].img}
                 alt="Logo da Sapatella"
