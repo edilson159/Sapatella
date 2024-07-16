@@ -42,7 +42,7 @@ const HeaderDesktop = () => {
     <section
       onMouseEnter={handleMouseHover}
       onMouseLeave={handleMouseHover}
-      className={scrolled ? "fixo" : "container-card-header-desktop"}
+      className={scrolled ? "fixo-desktop" : "container-card-header-desktop"}
     >
       <div className={Open ? "actived" : "not-actived"}>
         <div
@@ -73,7 +73,47 @@ const HeaderDesktop = () => {
                     alt="Logo da Sapatella"
                   />
 
-                  <div className="container-card-names-header-desktop"></div>
+                  <div className="container-card-names-header-desktop">
+                    {informations
+                      .filter((e) => e.name !== "Seja um Franqueado")
+                      .map(({ name, link }, index) => (
+                        <a
+                          className={
+                            mouseOut
+                              ? "container-card-names-header-desktop-itens-actived"
+                              : "container-card-names-header-desktop-itens"
+                          }
+                          key={index}
+                          href={link}
+                        >
+                          {name}
+                        </a>
+                      ))}
+                  </div>
+
+                  <div
+                    className={
+                      mouseOut
+                        ? "container-card-header-desktop-input-actived"
+                        : "container-card-header-desktop-input-not-actived"
+                    }
+                  >
+                    <input
+                      placeholder={placeholder}
+                      type={input}
+                      name=""
+                      id=""
+                    />
+                    {mouseOut
+                      ? iconsActive
+                          .filter((e) => e.icon === "../img/imgSearch.png")
+                          .map(({ icon }, index) => <img src={icon} alt="" />)
+                      : iconsNotActive
+                          .filter((e) => e.icon === "../img/imgSearchW.svg")
+                          .map(({ icon }, index) => (
+                            <img key={index} src={icon} alt="" />
+                          ))}
+                  </div>
 
                   <div className="container-header-desktop-card-3">
                     <div className="container-card-header-3-desktop">

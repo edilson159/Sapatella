@@ -29,7 +29,7 @@ const dataSapatella = [
             name: "OFF",
           },
           {
-            link: "//",
+            link: "//teste",
             name: "Seja um Franqueado",
           },
         ],

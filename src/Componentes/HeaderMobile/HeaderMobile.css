@@ -3,7 +3,7 @@
   z-index: 10000000;
 }
 
-.fixo {
+.fixo-desktop {
   position: fixed;
   z-index: 1000000;
 }
@@ -26,6 +26,21 @@
 
 .not-actived:hover .container-img-card-header-2 {
   filter: invert(0);
+}
+
+.container-card-names-header-desktop {
+  display: flex;
+  gap: 24px;
+}
+
+.container-card-names-header-desktop-itens {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.container-card-names-header-desktop-itens-actived {
+  text-decoration: none;
+  color: #4f4f4f;
 }
 
 .container-header-mobile-fixo {
@@ -60,4 +75,14 @@
   gap: 24px;
   align-items: center;
   width: 116px;
+}
+
+@media (min-width: 1024px) {
+  .container-card-header-mobile {
+    display: none;
+  }
+
+  .fixo {
+    display: none;
+  }
 }
