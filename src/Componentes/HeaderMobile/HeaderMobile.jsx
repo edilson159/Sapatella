@@ -55,31 +55,33 @@ const HeaderMobile = () => {
           <div>
             <MenuLateral />
           </div>
-          {dataSapatella.map((props, index) => (
-            <React.Fragment key={index}>
-              <img
-                className="container-img-card-header-2"
-                src={props.headerMobile[0].img}
-                alt="Logo da Sapatella"
-              />
+          {dataSapatella
+            .find((e) => e.headerMobile)
+            .headerMobile.map(
+              ({ img, imagesActive, imagesNotActive }, index) => (
+                <React.Fragment key={index}>
+                  <img
+                    className="container-img-card-header-2"
+                    src={img}
+                    alt="Logo da Sapatella"
+                  />
 
-              <div className="container-header-mobile-card-3">
-                <div className="container-card-header-3-mobile">
-                  {mouseOver &&
-                    props.headerMobile[0].imagesNotActive.map(
-                      ({ img }, index) => (
-                        <img key={index} src={img} alt="Icone de um lupa" />
-                      )
-                    )}
+                  <div className="container-header-mobile-card-3">
+                    <div className="container-card-header-3-mobile">
+                      {mouseOver &&
+                        imagesNotActive.map(({ img }, index) => (
+                          <img key={index} src={img} alt="Icone de um lupa" />
+                        ))}
 
-                  {mouseOut &&
-                    props.headerMobile[0].imagesActive.map(({ img }, index) => (
-                      <img key={index} src={img} alt="Icone de um lupa" />
-                    ))}
-                </div>
-              </div>
-            </React.Fragment>
-          ))}
+                      {mouseOut &&
+                        imagesActive.map(({ img }, index) => (
+                          <img key={index} src={img} alt="Icone de um lupa" />
+                        ))}
+                    </div>
+                  </div>
+                </React.Fragment>
+              )
+            )}
         </div>
       </div>
     </section>

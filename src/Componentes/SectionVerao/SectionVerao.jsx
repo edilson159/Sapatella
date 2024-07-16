@@ -10,8 +10,9 @@ const SectionVerao = () => {
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet"
       />
-      {dataSapatella[0].sectionSummer.map(
-        ({ img, title, description, button }, index) => (
+      {dataSapatella
+        .find((e) => e.sectionSummer)
+        .sectionSummer.map(({ img, title, description, button }, index) => (
           <div key={index} className="container-card-section-verao">
             <img
               className="container-card-section-verao-img"
@@ -26,8 +27,7 @@ const SectionVerao = () => {
               </div>
             </div>
           </div>
-        )
-      )}
+        ))}
     </section>
   );
 };

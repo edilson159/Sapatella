@@ -1,0 +1,63 @@
+.container-card-header-desktop {
+  position: relative;
+  z-index: 10000000;
+}
+
+.fixo {
+  position: fixed;
+  z-index: 1000000;
+}
+
+.container-header-desktop {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.not-actived:hover .container-header-desktop {
+  background: #ffffffc2;
+}
+
+.not-actived:hover .container-menu-hamburguer-open {
+  filter: invert(0);
+}
+
+.not-actived:hover .container-img-card-header-2 {
+  filter: invert(0);
+}
+
+.container-header-desktop-fixo {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  width: 100%;
+  background-color: #ffffffc2;
+}
+
+.container-header-desktop-fixo .container-img-card-header-2 {
+  filter: invert(0);
+}
+
+.actived .container-header-desktop {
+  background-color: #ffffff;
+}
+
+.actived .container-header-desktop-fixo {
+  background-color: #ffffff;
+}
+.actived .container-img-card-header-2 {
+  filter: invert(0);
+}
+
+.container-img-card-header-2 {
+  filter: invert(1);
+}
+.container-card-header-3-desktop {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  width: 116px;
+}

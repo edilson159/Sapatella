@@ -1,5 +1,72 @@
 const dataSapatella = [
   {
+    headerDesktop: [
+      {
+        img: "../img/logoSapatella.png",
+        informations: [
+          {
+            link: "//",
+            name: "Novidades",
+          },
+          {
+            link: "//",
+            name: "Sapatos",
+          },
+          {
+            link: "//",
+            name: "Sandálias",
+          },
+          {
+            link: "//",
+            name: "Tênis",
+          },
+          {
+            link: "//",
+            name: "Bolsas & Acessórios",
+          },
+          {
+            link: "//",
+            name: "OFF",
+          },
+          {
+            link: "//",
+            name: "Seja um Franqueado",
+          },
+        ],
+        input: "search",
+        placeholder: "Buscar",
+        iconsActive: [
+          {
+            icon: "../img/imgSearch.png",
+          },
+          {
+            icon: "../img/imgPuppet.png",
+          },
+          {
+            icon: "../img/imgHeart.svg",
+          },
+          {
+            icon: "../img/imgcart.png",
+          },
+        ],
+        iconsNotActive: [
+          {
+            icon: "../img/imgSearchW.svg",
+          },
+          {
+            icon: "../img/imgPuppetW.svg",
+          },
+          {
+            icon: "../img/imgHeartW.svg",
+          },
+          {
+            icon: "../img/imgcartW.svg",
+          },
+        ],
+      },
+    ],
+  },
+  {
     headerMobile: [
       {
         img: "../img/logoSapatella.png",
@@ -27,6 +94,8 @@ const dataSapatella = [
         ],
       },
     ],
+  },
+  {
     summaryMenuMobile: [
       {
         icone: "../img/imgArrow.png",
@@ -281,11 +350,15 @@ const dataSapatella = [
         ],
       },
     ],
+  },
+  {
     banner: [
       {
         img: "../img/imgBanner.png",
       },
     ],
+  },
+  {
     benefit: [
       {
         img: "../img/imgFrete.svg",
@@ -304,6 +377,8 @@ const dataSapatella = [
         description: "Parcele em até 6x sem juros",
       },
     ],
+  },
+  {
     shopCategory: [
       {
         tittle: "Compre por categoria",
@@ -331,6 +406,8 @@ const dataSapatella = [
         img: "../img/imgSneakers.png",
       },
     ],
+  },
+  {
     sectionSummer: [
       {
         img: "../img/imgSectionVerao.svg",
@@ -340,6 +417,8 @@ const dataSapatella = [
         button: "É a minha cara",
       },
     ],
+  },
+  {
     showcaseProducts1: [
       {
         title: "Favoritos da Semana",
@@ -497,6 +576,8 @@ const dataSapatella = [
         oldPrice: "R$ 200,00",
       },
     ],
+  },
+  {
     showcaseExhibition1: [
       {
         title: "Rasteiras & Birkens",
@@ -505,13 +586,13 @@ const dataSapatella = [
       },
       {
         title: "Eu quero",
-        link: "//",
+        link: "//1",
         image: "../img/imageExhibition1.svg",
         icon: "../img/arrowIndication.png",
       },
       {
         title: "Sandálias",
-        link: "//",
+        link: "//2",
         image: "../img/imageExhibition2.svg",
         icon: "../img/arrowIndication.png",
       },
@@ -523,15 +604,19 @@ const dataSapatella = [
       },
       {
         title: "Conferir",
-        link: "//",
+        link: "//3",
         icon: "../img/arrowIndication.png",
       },
     ],
+  },
+  {
     banner2: [
       {
         image: "../img/imageBanner2.svg",
       },
     ],
+  },
+  {
     showcaseProducts2: [
       {
         title: "Favoritos da Semana",
@@ -689,11 +774,15 @@ const dataSapatella = [
         oldPrice: "R$ 200,00",
       },
     ],
+  },
+  {
     banner3: [
       {
         image: "../img/Banner3.svg",
       },
     ],
+  },
+  {
     sectionSpatella: [
       {
         title: "Sobre a Sapatella",
@@ -702,6 +791,8 @@ const dataSapatella = [
         image: "../img/bannerSapatella.svg",
       },
     ],
+  },
+  {
     cadastro: [
       {
         description: "Cadastre-se e ganhe ",
@@ -716,6 +807,8 @@ const dataSapatella = [
         placeholder: "E-mail",
       },
     ],
+  },
+  {
     sectionSocial: [
       {
         image: "../img/logoSapatellaG.svg",
@@ -730,6 +823,8 @@ const dataSapatella = [
         image: "../img/logoFacebook.svg",
       },
     ],
+  },
+  {
     sectionInformation: [
       {
         icon: "../img/imgArrow.png",
@@ -813,6 +908,8 @@ const dataSapatella = [
         ],
       },
     ],
+  },
+  {
     sectionPayment: [
       {
         title: "FORMAS DE PAGAMENTO",
@@ -838,12 +935,16 @@ const dataSapatella = [
         ],
       },
     ],
+  },
+  {
     sectionSecurity: [
       {
         title: "SEGURANÇA",
         image: "../img/imgSecurity.svg",
       },
     ],
+  },
+  {
     footer: [
       {
         description:

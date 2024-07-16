@@ -10,8 +10,9 @@ const SectionInformation = () => {
   }
   return (
     <section className="container-section-information">
-      {dataSapatella[0].sectionInformation.map(
-        ({ title, icon, children }, index) => (
+      {dataSapatella
+        .find((e) => e.sectionInformation)
+        .sectionInformation.map(({ title, icon, children }, index) => (
           <details className="container-card-section-information" key={index}>
             <summary
               onClick={togleOpen}
@@ -29,8 +30,7 @@ const SectionInformation = () => {
               </div>
             ))}
           </details>
-        )
-      )}
+        ))}
     </section>
   );
 };

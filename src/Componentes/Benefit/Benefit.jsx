@@ -50,16 +50,18 @@ const Benefit = () => {
         rel="stylesheet"
       />
       <Slider {...settings}>
-        {dataSapatella[0].benefit.map(({ img, description }, index) => (
-          <div key={index}>
-            <div className="container-card-frete-free">
-              <div className="container-card-frete-free-item">
-                <img src={img} alt="" />
-                <p>{description}</p>
+        {dataSapatella
+          .find((e) => e.benefit)
+          .benefit.map(({ img, description }, index) => (
+            <div key={index}>
+              <div className="container-card-frete-free">
+                <div className="container-card-frete-free-item">
+                  <img src={img} alt="" />
+                  <p>{description}</p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
       </Slider>
     </section>
   );

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { DrawerContext } from "../Context/DrawerContext";
 import HeaderMobile from "../Componentes/HeaderMobile/HeaderMobile";
 import Banner from "../Componentes/Banners/Banner";
@@ -17,8 +17,49 @@ import SectionInformation from "../Componentes/SectionInformation/SectionInforma
 import SectionPayment from "../Componentes/SectionPayment/SectionPayment";
 import SectionSecurity from "../Componentes/SectionSecurity/SectionSecurity";
 import Footer from "../Componentes/Footer/Footer";
+import HeaderDesktop from "../Componentes/HeaderDesktop/HeaderDesktop";
 
 const Home = () => {
+  const [showBlock1, setShowBlock1] = useState(true);
+
+  useEffect(() => {
+    const handleResize1 = () => {
+      if (window.innerWidth > 1024) {
+        setShowBlock1(false);
+      } else {
+        setShowBlock1(true);
+      }
+    };
+
+    // Adiciona um ouvinte de evento para redimensionamento da janela
+    window.addEventListener("resize", handleResize1);
+
+    // Remove o ouvinte de evento quando o componente é desmontado
+    return () => {
+      window.removeEventListener("resize", handleResize1);
+    };
+  }, []);
+
+  const [showBlock2, setShowBlock2] = useState(true);
+
+  useEffect(() => {
+    const handleResize2 = () => {
+      if (window.innerWidth < 1024) {
+        setShowBlock2(false);
+      } else {
+        setShowBlock2(true);
+      }
+    };
+
+    // Adiciona um ouvinte de evento para redimensionamento da janela
+    window.addEventListener("resize", handleResize2);
+
+    // Remove o ouvinte de evento quando o componente é desmontado
+    return () => {
+      window.removeEventListener("resize", handleResize2);
+    };
+  }, []);
+
   const [Open, setOpen] = useState(false);
   const [mouseOver, setMouseOver] = useState(true);
   const [mouseOut, setMouseOut] = useState(false);
@@ -36,7 +77,8 @@ const Home = () => {
       value={{ Open, setOpen, mouseOver, setMouseOver, mouseOut, setMouseOut }}
     >
       <section>
-        <HeaderMobile />
+        {showBlock2 && <HeaderDesktop />}
+        {showBlock1 && <HeaderMobile />}
         <Banner />
         <Benefit />
         <ShopCategory />

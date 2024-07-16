@@ -43,11 +43,13 @@
 }
 
 .container-card-cadastro input {
+  display: grid;
   height: 40px;
   width: 90%;
   margin-left: 15px;
   gap: 0px;
-  border: solid Black 02 1px;
+  border: solid #b0b0b0 1px;
+  background-color: #fff;
 }
 
 .container-card-cadastro input::placeholder {

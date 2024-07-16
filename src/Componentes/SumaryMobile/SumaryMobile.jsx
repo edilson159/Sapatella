@@ -6,8 +6,9 @@ const SumaryMobile = () => {
   const [SumaryOpen, SetSumaryOpen] = useState(false);
   return (
     <section className="container-sumary-mobile">
-      {dataSapatella[0].summaryMenuMobile.map(
-        ({ name, icone, children }, index) => (
+      {dataSapatella
+        .find((e) => e.summaryMenuMobile)
+        .summaryMenuMobile.map(({ name, icone, children }, index) => (
           <details className="container-card-summary-mobile" key={index}>
             <summary
               onClick={() => SetSumaryOpen(!SumaryOpen)}
@@ -33,8 +34,7 @@ const SumaryMobile = () => {
               </div>
             ))}
           </details>
-        )
-      )}
+        ))}
     </section>
   );
 };

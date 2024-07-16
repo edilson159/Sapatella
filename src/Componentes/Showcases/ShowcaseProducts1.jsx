@@ -51,54 +51,58 @@ const ShowcaseProducts1 = () => {
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
       />
 
-      {dataSapatella.map((props, index) => (
-        <div key={index} className="container-card-vitrini-products-1-title">
-          <h2>{props.showcaseProducts1[0].title}</h2>
-        </div>
-      ))}
+      {dataSapatella
+        .find((e) => e.showcaseProducts1)
+        .showcaseProducts1.map(({ title }, index) => (
+          <div key={index} className="container-card-vitrini-products-1-title">
+            <h2>{title}</h2>
+          </div>
+        ))}
 
       <Slider {...settings}>
-        {dataSapatella[0].showcaseProducts1.map(
-          (
-            {
-              image,
-              discount,
-              heartIcon,
-              name,
-              description,
-              currentPrice,
-              oldPrice,
-            },
-            index
-          ) => (
-            <div key={index} className="container-card-vitrini-products-1">
-              <div className="container-card-vitrini-products-1-discount">
-                <p>{discount}</p>
-              </div>
-              <img
-                className="container-card-vitrini-products-img-heart"
-                src={heartIcon}
-                alt="Icone de um coração"
-              />
-
-              <div className="container-card-vitrini-products-1-img">
-                <img src={image} alt="Imagem do produto" />
-              </div>
-
-              <div className="container-card-vitrini-products-1-description">
-                <div className="container-card-vitrini-products-1-description-name">
-                  <p>{name}</p>
+        {dataSapatella
+          .find((e) => e.showcaseProducts1)
+          .showcaseProducts1.map(
+            (
+              {
+                image,
+                discount,
+                heartIcon,
+                name,
+                description,
+                currentPrice,
+                oldPrice,
+              },
+              index
+            ) => (
+              <div key={index} className="container-card-vitrini-products-1">
+                <div className="container-card-vitrini-products-1-discount">
+                  <p>{discount}</p>
                 </div>
-                <div className="container-card-vitrini-products-1-description-price">
-                  <p>{currentPrice}</p>
+                <img
+                  className="container-card-vitrini-products-img-heart"
+                  src={heartIcon}
+                  alt="Icone de um coração"
+                />
 
-                  <p>{oldPrice}</p>
+                <div className="container-card-vitrini-products-1-img">
+                  <img src={image} alt="Imagem do produto" />
                 </div>
-                <p className="container-option-the-payment">{description}</p>
+
+                <div className="container-card-vitrini-products-1-description">
+                  <div className="container-card-vitrini-products-1-description-name">
+                    <p>{name}</p>
+                  </div>
+                  <div className="container-card-vitrini-products-1-description-price">
+                    <p>{currentPrice}</p>
+
+                    <p>{oldPrice}</p>
+                  </div>
+                  <p className="container-option-the-payment">{description}</p>
+                </div>
               </div>
-            </div>
-          )
-        )}
+            )
+          )}
       </Slider>
     </section>
   );
