@@ -356,6 +356,18 @@ const dataSapatella = [
       {
         img: "../img/imgBanner.png",
       },
+      {
+        img: "../img/imgBanner.png",
+      },
+      {
+        img: "../img/imgBanner.png",
+      },
+      {
+        img: "../img/imgBanner.png",
+      },
+      {
+        img: "../img/imgBanner.png",
+      },
     ],
   },
   {
