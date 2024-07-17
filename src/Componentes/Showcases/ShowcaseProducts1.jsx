@@ -53,11 +53,17 @@ const ShowcaseProducts1 = () => {
 
       {dataSapatella
         .find((e) => e.showcaseProducts1)
-        .showcaseProducts1.map(({ title }, index) => (
-          <div key={index} className="container-card-vitrini-products-1-title">
-            <h2>{title}</h2>
-          </div>
-        ))}
+        .showcaseProducts1.map(
+          ({ title }, index) =>
+            title && (
+              <div
+                key={index}
+                className="container-card-vitrini-products-1-title"
+              >
+                <h2>{title}</h2>
+              </div>
+            )
+        )}
 
       <Slider {...settings}>
         {dataSapatella

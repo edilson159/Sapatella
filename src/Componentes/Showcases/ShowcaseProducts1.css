@@ -55,6 +55,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 24px;
 }
 .container-vitrini-products .container-card-vitrini-products-1-title h2 {
   font-family: DM Sans;

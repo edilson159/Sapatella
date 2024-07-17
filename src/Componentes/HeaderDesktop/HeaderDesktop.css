@@ -1,11 +1,13 @@
 .container-card-header-desktop {
   position: relative;
   z-index: 10000000;
+  width: 100%;
 }
 
-.fixo {
+.fixo-desktop {
   position: fixed;
   z-index: 1000000;
+  width: 100%;
 }
 
 .container-header-desktop {
@@ -14,6 +16,13 @@
   justify-content: space-around;
   align-items: center;
   padding: 20px 0;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.not-actived {
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 
@@ -33,9 +42,11 @@
   position: fixed;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 20px 0;
   width: 100%;
   background-color: #ffffffc2;
+  max-width: 1280px;
 }
 
 .container-card-header-desktop-input-not-actived {

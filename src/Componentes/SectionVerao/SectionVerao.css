@@ -15,6 +15,8 @@
 }
 
 .container-card-section-verao .container-card-section-verao-description {
+  display: grid;
+  gap: 16px;
   font-family: DM Sans;
   left: 15px;
   width: 273px;
@@ -41,14 +43,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   background-color: #cf215b;
   padding: 14px 24px;
   width: 156px;
-  margin-top: 32px;
+  margin-top: 16px;
 }
 
 .container-card-section-verao-button a {
   text-decoration: none;
   color: #fff;
+}
+
+@media (min-width: 1024px) {
+  .container-section-verao {
+    position: relative;
+  }
+
+  .container-card-section-verao {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 32px 155px;
+  }
+  .container-card-section-verao-img {
+    grid-column: 2;
+  }
+  .container-section-verao .container-card-section-verao-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: absolute;
+    left: 155px;
+    top: 124px;
+    grid-column: 1;
+  }
 }

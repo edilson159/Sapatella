@@ -26,7 +26,7 @@ const Banner = () => {
     ],
   };
   return (
-    <section>
+    <section className="container-banner-mobile">
       <link
         rel="stylesheet"
         type="text/css"

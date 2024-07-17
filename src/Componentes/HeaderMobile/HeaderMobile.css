@@ -3,7 +3,7 @@
   z-index: 10000000;
 }
 
-.fixo-desktop {
+.fixo {
   position: fixed;
   z-index: 1000000;
 }
@@ -16,15 +16,15 @@
   width: 100%;
 }
 
-.not-actived:hover .container-header-mobile {
+.not-actived-mobile:hover .container-header-mobile {
   background: #ffffffc2;
 }
 
-.not-actived:hover .container-menu-hamburguer-open {
+.not-actived-mobile:hover .container-menu-hamburguer-open {
   filter: invert(0);
 }
 
-.not-actived:hover .container-img-card-header-2 {
+.not-actived-mobile:hover .container-img-card-header-2 {
   filter: invert(0);
 }
 
@@ -77,7 +77,7 @@
   width: 116px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .container-card-header-mobile {
     display: none;
   }

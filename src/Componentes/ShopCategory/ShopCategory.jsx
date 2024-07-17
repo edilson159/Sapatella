@@ -4,7 +4,7 @@ import "./ShopCategory.css";
 const ShopCategory = () => {
   return (
     <section className="container-shop-category">
-      <div>
+      <div className="container-card-shop-category">
         {dataSapatella
           .find((e) => e.shopCategory)
           .shopCategory.map(
@@ -23,7 +23,7 @@ const ShopCategory = () => {
             .shopCategory.map(({ img, description }, index) => (
               <div key={index} className="container-shop-category-item">
                 <div className="container-Card-shop">
-                  <div className="container-card-shop-category">
+                  <div className="container-card-shop-category-2">
                     <img src={img} alt="" />
                     <p>{description}</p>
                   </div>
