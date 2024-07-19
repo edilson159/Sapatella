@@ -795,6 +795,13 @@ const dataSapatella = [
     ],
   },
   {
+    banner3Desktop: [
+      {
+        image: "../img/banner3Desktop.svg",
+      },
+    ],
+  },
+  {
     sectionSpatella: [
       {
         title: "Sobre a Sapatella",

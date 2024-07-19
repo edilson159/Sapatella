@@ -1,3 +1,4 @@
+import "./Home.css";
 import { useEffect, useState } from "react";
 import { DrawerContext } from "../Context/DrawerContext";
 import HeaderMobile from "../Componentes/HeaderMobile/HeaderMobile";
@@ -18,16 +19,17 @@ import SectionPayment from "../Componentes/SectionPayment/SectionPayment";
 import SectionSecurity from "../Componentes/SectionSecurity/SectionSecurity";
 import Footer from "../Componentes/Footer/Footer";
 import HeaderDesktop from "../Componentes/HeaderDesktop/HeaderDesktop";
+import Banner3Desktop from "../Componentes/Banners/Banner3Desktop";
 
 const Home = () => {
-  const [showBlock1, setShowBlock1] = useState(true);
+  const [showBlockMobile, setShowBlockMobile] = useState(true);
 
   useEffect(() => {
     const handleResize1 = () => {
       if (window.innerWidth > 1024) {
-        setShowBlock1(false);
+        setShowBlockMobile(false);
       } else {
-        setShowBlock1(true);
+        setShowBlockMobile(true);
       }
     };
 
@@ -40,14 +42,14 @@ const Home = () => {
     };
   }, []);
 
-  const [showBlock2, setShowBlock2] = useState(true);
+  const [showBlockDesktop, setShowBlockDesktop] = useState(true);
 
   useEffect(() => {
     const handleResize2 = () => {
       if (window.innerWidth < 1024) {
-        setShowBlock2(false);
+        setShowBlockDesktop(false);
       } else {
-        setShowBlock2(true);
+        setShowBlockDesktop(true);
       }
     };
 
@@ -77,17 +79,20 @@ const Home = () => {
       value={{ Open, setOpen, mouseOver, setMouseOver, mouseOut, setMouseOut }}
     >
       <section>
-        {showBlock2 && <HeaderDesktop />}
-        {showBlock1 && <HeaderMobile />}
+        {showBlockDesktop && <HeaderDesktop />}
+        {showBlockMobile && <HeaderMobile />}
         <Banner />
         <Benefit />
         <ShopCategory />
         <SectionVerao />
         <ShowcaseProducts1 />
         <ShowcaseExhibition1 />
-        <Banner2 />
-        <ShowcaseProducts2 />
-        <Banner3 />
+        <div className="Junction-Desktop">
+          <Banner2 />
+          <ShowcaseProducts2 />
+        </div>
+        {showBlockMobile && <Banner3 />}
+        {showBlockDesktop && <Banner3Desktop />}
         <SectionSapatella />
         <Cadastro />
         <SectionSocial />

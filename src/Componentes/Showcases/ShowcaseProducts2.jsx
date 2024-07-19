@@ -6,16 +6,16 @@ const ShowcaseProducts2 = () => {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           infinite: true,
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
       {
@@ -53,11 +53,17 @@ const ShowcaseProducts2 = () => {
 
       {dataSapatella
         .find((e) => e.showcaseProducts1)
-        .showcaseProducts1.map(({ title }, index) => (
-          <div key={index} className="container-card-vitrini-products-2-title">
-            <h2>{title}</h2>
-          </div>
-        ))}
+        .showcaseProducts1.map(
+          ({ title }, index) =>
+            title && (
+              <div
+                key={index}
+                className="container-card-vitrini-products-2-title"
+              >
+                <h2>{title}</h2>
+              </div>
+            )
+        )}
 
       <Slider {...settings}>
         {dataSapatella

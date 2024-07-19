@@ -1,4 +1,6 @@
 .container-banner-2 {
+  display: grid;
+  align-items: center;
   margin-top: 64px;
   width: 100%;
 }
@@ -9,4 +11,14 @@
 
 .container-card-banner-2 img {
   width: 100%;
+}
+
+@media (min-width: 1025px) {
+  .container-banner-2 {
+    position: relative;
+    width: 630px;
+    top: 0px;
+    left: 0;
+    margin: unset;
+  }
 }

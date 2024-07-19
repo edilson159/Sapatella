@@ -1,3 +1,9 @@
 .container-banner-3 .container-card-banner-3 img {
   width: 100%;
 }
+
+@media (min-width: 1025px) {
+  .container-banner-3 {
+    display: none;
+  }
+}

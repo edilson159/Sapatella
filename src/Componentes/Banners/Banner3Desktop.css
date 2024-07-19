@@ -1,0 +1,9 @@
+.container-banner-3-desktop .container-card-banner-3-desktop img {
+  width: 100%;
+}
+
+@media (max-width: 1025px) {
+  .container-banner-3-desktop {
+    display: none;
+  }
+}
