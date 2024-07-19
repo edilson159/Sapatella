@@ -2,6 +2,10 @@
   margin: 0px 3px 64px 15px;
 }
 
+.container-vitrini-products-2 .slick-slider.slick-initialized {
+  cursor: grab !important ;
+}
+
 .container-vitrini-products-2 button.slick-arrow.slick-prev {
   position: absolute;
   z-index: 10000;

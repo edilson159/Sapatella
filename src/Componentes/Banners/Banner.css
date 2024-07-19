@@ -1,10 +1,44 @@
 .container-banner-mobile button.slick-arrow.slick-prev {
   position: absolute;
+  z-index: 10000;
+  background-image: url(/public/img/arrowLeft.png);
+  background-repeat: no-repeat;
+  background-position: 18px;
+  background-size: 8px;
+  display: block;
+  background-color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  transform: translate(0, -120%);
   left: 36px;
+}
+
+.container-banner-mobile .slick-prev:before {
+  color: transparent;
+  opacity: 0 !important ;
 }
 .container-banner-mobile button.slick-arrow.slick-next {
   position: absolute;
+  transform: translate(0, -120%);
   right: 36px;
+  color: transparent;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url(/public/img/arrowRigth.png);
+  background-position: 18px;
+  background-size: 8px;
+  display: block;
+  background-color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  z-index: 10000;
+}
+
+.container-banner-mobile .slick-next:before {
+  color: transparent;
+  opacity: 0;
 }
 
 .container-card-banner-mobile {

@@ -11,7 +11,10 @@ const ShowcaseExhibition1 = () => {
             .find((e) => e.showcaseExhibition1)
             .showcaseExhibition1.slice(0, 1)
             .map(({ title, description }, index) => (
-              <div className="container-card-showcase-exhibtion1-title">
+              <div
+                key={index}
+                className="container-card-showcase-exhibtion1-title"
+              >
                 <h2>{title}</h2>
                 <div className="container-card-showcase-exhibition1-p1">
                   <p>{description}</p>
@@ -22,7 +25,10 @@ const ShowcaseExhibition1 = () => {
             .find((e) => e.showcaseExhibition1)
             .showcaseExhibition1.slice(1, 2)
             .map(({ title, link, icon, image }, index) => (
-              <div className="container-card-showcase-exhibition1-p2">
+              <div
+                key={index}
+                className="container-card-showcase-exhibition1-p2"
+              >
                 <div className="container-card-showcase-exhibition1-p2-1">
                   <a href={link}>{title}</a>
                   <img src={icon} alt="" />
@@ -40,7 +46,10 @@ const ShowcaseExhibition1 = () => {
             .find((e) => e.showcaseExhibition1)
             .showcaseExhibition1.slice(2, 3)
             .map(({ image, title, link, icon }, index) => (
-              <div className="container-card-showcase-exhibition1-p3-1">
+              <div
+                key={index}
+                className="container-card-showcase-exhibition1-p3-1"
+              >
                 <img
                   className="container-card-showcase-exhibition1-p3-1-img"
                   src={image}

@@ -24,6 +24,7 @@ const HeaderDesktop = () => {
       if (window.scrollY > 40) {
         setScrolled(true);
         setMouseOver(false);
+        setMouseOut(true);
       } else {
         setScrolled(false);
         setMouseOver(true);
@@ -45,13 +46,7 @@ const HeaderDesktop = () => {
       className={scrolled ? "fixo-desktop" : "container-card-header-desktop"}
     >
       <div className={Open ? "actived" : "not-actived"}>
-        <div
-          className={
-            scrolled
-              ? "container-header-desktop-fixo"
-              : "container-header-desktop"
-          }
-        >
+        <div className="container-header-desktop">
           {dataSapatella
             .filter((e) => e.headerDesktop)[0]
             .headerDesktop.map(
@@ -68,6 +63,7 @@ const HeaderDesktop = () => {
               ) => (
                 <React.Fragment key={index}>
                   <img
+                    key={index}
                     className="container-img-card-header-2"
                     src={img}
                     alt="Logo da Sapatella"
@@ -107,7 +103,9 @@ const HeaderDesktop = () => {
                     {mouseOut
                       ? iconsActive
                           .filter((e) => e.icon === "../img/imgSearch.png")
-                          .map(({ icon }, index) => <img src={icon} alt="" />)
+                          .map(({ icon }, index) => (
+                            <img key={index} src={icon} alt="" />
+                          ))
                       : iconsNotActive
                           .filter((e) => e.icon === "../img/imgSearchW.svg")
                           .map(({ icon }, index) => (

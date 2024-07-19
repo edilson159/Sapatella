@@ -1,17 +1,22 @@
 .container-card-header-desktop {
-  position: relative;
+  position: absolute;
   z-index: 10000000;
   width: 100%;
+}
+
+.container-card-header-desktop:hover {
+  z-index: 1000000000;
+  background-color: #ffffffc2;
 }
 
 .fixo-desktop {
   position: fixed;
   z-index: 1000000;
   width: 100%;
+  background-color: #ffffffc2;
 }
 
 .container-header-desktop {
-  position: absolute;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -26,9 +31,9 @@
   width: 100%;
 }
 
-.not-actived:hover .container-header-desktop {
+/* .not-actived:hover .container-header-desktop {
   background: #ffffffc2;
-}
+} */
 
 .not-actived:hover .container-menu-hamburguer-open {
   filter: invert(0);
@@ -74,7 +79,7 @@
   color: #4f4f4f;
 }
 
-.container-header-desktop-fixo .container-img-card-header-2 {
+.fixo-desktop .container-img-card-header-2 {
   filter: invert(0);
 }
 
