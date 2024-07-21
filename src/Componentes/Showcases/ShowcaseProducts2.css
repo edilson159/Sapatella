@@ -147,6 +147,10 @@
   text-align: left;
 }
 
+.container-card-vitrini-products-1-descrption-price-old-price {
+  text-decoration: line-through;
+}
+
 .container-option-the-payment {
   font-family: DM Sans;
   font-size: 12px;

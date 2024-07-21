@@ -100,9 +100,13 @@ const ShowcaseProducts1 = () => {
                     <p>{name}</p>
                   </div>
                   <div className="container-card-vitrini-products-1-description-price">
-                    <p>{currentPrice}</p>
+                    <p className="container-card-vitrini-products-1-descrption-price-current-price">
+                      {currentPrice}
+                    </p>
 
-                    <p>{oldPrice}</p>
+                    <p className="container-card-vitrini-products-1-descrption-price-old-price">
+                      {oldPrice}
+                    </p>
                   </div>
                   <p className="container-option-the-payment">{description}</p>
                 </div>
