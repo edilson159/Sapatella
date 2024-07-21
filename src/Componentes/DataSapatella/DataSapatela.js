@@ -422,7 +422,7 @@ const dataSapatella = [
   {
     sectionSummer: [
       {
-        img: "../img/imgSectionVerao.svg",
+        img: "../img/ImgSectionVerao.svg",
         title: "Pra brilhar no verão",
         description:
           "As Sandálias Birkens são uma escolha de calçado atemporal e icônica, conhecida por seu conforto, qualidade e design diferenciado.",
