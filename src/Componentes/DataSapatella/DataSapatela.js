@@ -46,7 +46,7 @@ const dataSapatella = [
             icon: "../img/imgHeart.svg",
           },
           {
-            icon: "../img/imgcart.png",
+            icon: "../img/imgCart.png",
           },
         ],
         iconsNotActive: [
@@ -60,7 +60,7 @@ const dataSapatella = [
             icon: "../img/imgHeartW.svg",
           },
           {
-            icon: "../img/imgcartW.svg",
+            icon: "../img/imgCartW.svg",
           },
         ],
       },
