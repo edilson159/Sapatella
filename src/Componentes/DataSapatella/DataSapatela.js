@@ -877,25 +877,13 @@ const dataSapatella = [
         title: "MINHA CONTA",
         children: [
           {
-            name: "Quem somos",
+            name: "Meus Dados",
           },
           {
-            name: "Mapa do site",
+            name: "Meus pedidos",
           },
           {
-            name: "Casas Sapatella",
-          },
-          {
-            name: "Seja um parceiro",
-          },
-          {
-            name: "Seja um Franqueado",
-          },
-          {
-            name: "Seja um afiliado",
-          },
-          {
-            name: "Trabalhe com a gente",
+            name: "Login",
           },
         ],
       },
@@ -904,25 +892,16 @@ const dataSapatella = [
         title: "SOBRE NÓS",
         children: [
           {
-            name: "Quem somos",
+            name: "Trocas e Devoluções",
           },
           {
-            name: "Mapa do site",
+            name: "Dúvidas Frequentes",
           },
           {
-            name: "Casas Sapatella",
+            name: "Fale Conosco",
           },
           {
-            name: "Seja um parceiro",
-          },
-          {
-            name: "Seja um Franqueado",
-          },
-          {
-            name: "Seja um afiliado",
-          },
-          {
-            name: "Trabalhe com a gente",
+            name: "Super Natal",
           },
         ],
       },
@@ -959,7 +938,14 @@ const dataSapatella = [
     sectionSecurity: [
       {
         title: "SEGURANÇA",
-        image: "../img/imgSecurity.svg",
+        images: [
+          {
+            image: "../img/imgSecurity.svg",
+          },
+          {
+            image: "../img/imgSecurity2.svg",
+          },
+        ],
       },
     ],
   },

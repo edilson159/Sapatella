@@ -21,14 +21,12 @@ const SectionInformation = () => {
               {title}
               <img className="img-arrow" src={icon} alt="" />
             </summary>
-            {children.map(({ name }, index) => (
-              <div
-                className="container-card-section-information-summary-children"
-                key={index}
-              >
-                <p>{name}</p>
-              </div>
-            ))}
+            <div className="container-card-section-information-summary-children">
+              {" "}
+              {children.map(({ name }, index) => (
+                <p key={index}>{name}</p>
+              ))}
+            </div>
           </details>
         ))}
     </section>

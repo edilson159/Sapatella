@@ -12,6 +12,10 @@
 }
 
 .container-card-section-sapatella-p1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
   padding: 0px 40px;
 }
 
@@ -37,4 +41,19 @@
 
 .container-card-section-sapatella-p2 img {
   width: 100%;
+}
+
+@media (min-width: 1025px) {
+  .container-card-section-sapatella {
+    display: grid !important;
+    grid-template-columns: repeat(2, auto);
+  }
+  .container-card-section-sapatella-p1 {
+    padding: 0px 133px 0px 155px;
+    text-align: left;
+    align-items: start;
+  }
+  .container-card-section-sapatella-p1 p {
+    text-align: left;
+  }
 }

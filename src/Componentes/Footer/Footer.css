@@ -27,3 +27,9 @@
   justify-content: center;
   gap: 40px;
 }
+
+@media (min-width: 1025px) {
+  .container-card-footer p {
+    font-size: 12px;
+  }
+}

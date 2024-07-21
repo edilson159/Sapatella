@@ -24,3 +24,9 @@
   gap: 8px;
   width: 104px;
 }
+
+@media (min-width: 1025px) {
+  .container-section-payment {
+    display: none;
+  }
+}

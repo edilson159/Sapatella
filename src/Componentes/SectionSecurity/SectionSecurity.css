@@ -3,6 +3,9 @@
 }
 
 .container-card-section-security {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding: 24px 0px 24px 15px;
   border-bottom: 1px solid #b0b0b0;
 }
@@ -14,4 +17,10 @@
   line-height: 20px;
   text-align: left;
   color: #4f4f4f;
+}
+
+@media (min-width: 1025px) {
+  .container-section-security {
+    display: none;
+  }
 }

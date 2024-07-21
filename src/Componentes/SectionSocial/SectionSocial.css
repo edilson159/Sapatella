@@ -13,3 +13,9 @@
   border-bottom: 1px solid #b0b0b0;
   width: 90%;
 }
+
+@media (min-width: 1025px) {
+  .container-section-social {
+    display: none;
+  }
+}

@@ -21,4 +21,7 @@
     left: 0;
     margin: unset;
   }
+  .container-card-banner-2 img {
+    width: 94%;
+  }
 }

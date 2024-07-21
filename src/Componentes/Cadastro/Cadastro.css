@@ -1,16 +1,22 @@
 .container-cadastro {
   display: grid;
+  grid-template-rows: repeat(2, auto);
   gap: 16px;
   background-color: #f5f5f5;
   padding: 27px 0px 24px 0px;
 }
 
-.container-card-cadastro {
+.container-cadastro-main {
   display: grid;
   gap: 16px;
 }
 
-.container-card-cadastro-p1 {
+.container-cadastro {
+  display: grid;
+  gap: 16px;
+}
+
+.container-cadastro-p1 {
   display: grid;
   gap: 26px;
 }
@@ -18,23 +24,19 @@
 .container-card-cadastro-p1-1 {
   display: flex;
   justify-content: center;
+  grid-row: 1;
   flex-wrap: wrap;
   gap: 3px;
 }
 
-.container-card-cadastro .container-card-cadastro-p1-1 p {
+.container-cadastro .container-card-cadastro-p1-1 p {
   font-family: DM Sans;
   font-size: 18px;
   font-weight: 400;
-  margin: unset;
-  margin-block-start: unset;
-  margin-inline-start: unset;
-  margin-block-end: unset;
-  margin-inline-end: undet;
   color: #161616;
 }
 
-.container-card-cadastro span {
+.container-cadastro span {
   font-family: DM Sans;
   font-size: 18px;
   font-weight: 700;
@@ -42,17 +44,25 @@
   color: #cf215b;
 }
 
-.container-card-cadastro input {
+.inputs-and-button {
   display: grid;
+  gap: 16px;
+}
+
+.container-cadastro-inputs {
+  display: grid;
+  gap: 16px;
+}
+
+.container-cadastro input {
   height: 40px;
   width: 90%;
   margin-left: 15px;
-  gap: 0px;
   border: solid #b0b0b0 1px;
   background-color: #fff;
 }
 
-.container-card-cadastro input::placeholder {
+.container-cadastro input::placeholder {
   padding-left: 12px;
   font-family: DM Sans;
   font-size: 16px;
@@ -64,6 +74,7 @@
 .container-card-cadastro-button {
   display: flex;
   justify-content: center;
+  grid-row: 4;
   width: 100%;
 }
 
@@ -81,4 +92,27 @@
   color: #fff;
   background-color: #cf215b;
   border: none;
+}
+
+@media (min-width: 1025px) {
+  .container-cadastro {
+    padding: 35px 0px 34px 0px;
+    grid-template-rows: repeat(2, auto);
+  }
+  .container-card-cadastro-p1-1 {
+    width: 100%;
+  }
+  .inputs-and-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-cadastro-inputs {
+    display: flex;
+    width: 600px;
+  }
+
+  .container-card-cadastro-button {
+    width: auto;
+  }
 }

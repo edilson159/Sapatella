@@ -156,8 +156,8 @@
     position: absolute;
     width: 630px;
     right: 0px;
-    top: 0px;
-    margin: 40px 3px 64px 15px;
+    top: 17px;
+    margin: unset;
   }
 
   .container-card-vitrini-products-2-title {

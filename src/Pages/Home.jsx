@@ -20,6 +20,7 @@ import SectionSecurity from "../Componentes/SectionSecurity/SectionSecurity";
 import Footer from "../Componentes/Footer/Footer";
 import HeaderDesktop from "../Componentes/HeaderDesktop/HeaderDesktop";
 import Banner3Desktop from "../Componentes/Banners/Banner3Desktop";
+import Junction from "../Componentes/Junction/Junction";
 
 const Home = () => {
   const [showBlockMobile, setShowBlockMobile] = useState(true);
@@ -95,10 +96,11 @@ const Home = () => {
         {showBlockDesktop && <Banner3Desktop />}
         <SectionSapatella />
         <Cadastro />
-        <SectionSocial />
-        <SectionInformation />
-        <SectionPayment />
-        <SectionSecurity />
+        {showBlockDesktop && <Junction />}
+        {showBlockMobile && <SectionSocial />}
+        {showBlockMobile && <SectionInformation />}
+        {showBlockMobile && <SectionPayment />}
+        {showBlockMobile && <SectionSecurity />}
         <Footer />
       </section>
     </DrawerContext.Provider>
