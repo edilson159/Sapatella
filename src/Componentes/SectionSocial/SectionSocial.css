@@ -14,6 +14,10 @@
   width: 90%;
 }
 
+.container-card-section-social-p2 img {
+  cursor: pointer;
+}
+
 @media (min-width: 1025px) {
   .container-section-social {
     display: none;

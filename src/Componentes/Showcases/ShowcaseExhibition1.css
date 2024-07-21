@@ -8,12 +8,13 @@ a {
 
 .container-card-showcase-exhibition1 {
   display: grid;
-  grid-gap: 12px;
+  gap: 12px;
   padding: 32px 15px 36px 15px;
 }
 
 .container-showcase-exhibition1 .container-card-showcase-exhibtion1-title {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 8px;
 }
 
@@ -41,7 +42,8 @@ a {
 }
 
 .container-card-showcase-exhibition1 .container-card-showcase-exhibition1-p2 {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 19px;
   height: 100%;
 }
@@ -117,7 +119,9 @@ a {
   .container-card-showcase-exhibition1-p3-2-description {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  gap: 8px;
 }
 
 .container-card-showcase-exhibition1
@@ -138,6 +142,7 @@ a {
   line-height: 14px;
   text-align: center;
   color: #4f4f4f;
+  margin-bottom: 14px;
 }
 
 .container-card-showcase-exhibition1-p3-2-description-link {

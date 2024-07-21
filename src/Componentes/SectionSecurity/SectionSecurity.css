@@ -19,6 +19,10 @@
   color: #4f4f4f;
 }
 
+.container-card-section-security img {
+  cursor: pointer;
+}
+
 @media (min-width: 1025px) {
   .container-section-security {
     display: none;

@@ -3,6 +3,9 @@
 }
 
 .container-card-section-payment {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding: 24px 0px;
   width: 90%;
   margin-left: 15px;
@@ -23,6 +26,10 @@
   grid-template-columns: repeat(3, auto);
   gap: 8px;
   width: 104px;
+}
+
+.container-card-section-payment-images img {
+  cursor: pointer;
 }
 
 @media (min-width: 1025px) {
