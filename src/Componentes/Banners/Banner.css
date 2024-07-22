@@ -48,3 +48,22 @@
 .container-card-banner-mobile img {
   width: 100%;
 }
+.container-card-banner-desktop {
+  width: 100%;
+}
+
+.container-card-banner-desktop img {
+  width: 100%;
+}
+
+@media (min-width: 1025px) {
+  .container-card-banner-mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1025px) {
+  .container-card-banner-desktop {
+    display: none;
+  }
+}

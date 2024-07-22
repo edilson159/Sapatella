@@ -77,7 +77,16 @@ const Home = () => {
   toggle();
   return (
     <DrawerContext.Provider
-      value={{ Open, setOpen, mouseOver, setMouseOver, mouseOut, setMouseOut }}
+      value={{
+        Open,
+        setOpen,
+        mouseOver,
+        setMouseOver,
+        mouseOut,
+        setMouseOut,
+        showBlockDesktop,
+        showBlockMobile,
+      }}
     >
       <section>
         {showBlockDesktop && <HeaderDesktop />}

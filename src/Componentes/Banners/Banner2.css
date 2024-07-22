@@ -16,7 +16,7 @@
 @media (min-width: 1025px) {
   .container-banner-2 {
     position: relative;
-    width: 630px;
+    width: 50%;
     top: 0px;
     left: 0;
     margin: unset;

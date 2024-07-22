@@ -354,19 +354,48 @@ const dataSapatella = [
   {
     banner: [
       {
-        img: "../img/imgBanner.png",
+        imagesMobile: [
+          {
+            img: "../img/imgBanner.png",
+          },
+          {
+            img: "../img/imgBanner.png",
+          },
+          {
+            img: "../img/imgBanner.png",
+          },
+          {
+            img: "../img/imgBanner.png",
+          },
+          {
+            img: "../img/imgBanner.png",
+          },
+        ],
       },
       {
-        img: "../img/imgBanner.png",
-      },
-      {
-        img: "../img/imgBanner.png",
-      },
-      {
-        img: "../img/imgBanner.png",
-      },
-      {
-        img: "../img/imgBanner.png",
+        imagesDesktop: [
+          {
+            img: "../img/BannerDesktop.png",
+          },
+          {
+            img: "../img/BannerDesktop.png",
+          },
+          {
+            img: "../img/BannerDesktop.png",
+          },
+          {
+            img: "../img/BannerDesktop.png",
+          },
+          {
+            img: "../img/BannerDesktop.png",
+          },
+          {
+            img: "../img/BannerDesktop.png",
+          },
+          {
+            img: "../img/BannerDesktop.png",
+          },
+        ],
       },
     ],
   },

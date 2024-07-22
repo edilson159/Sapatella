@@ -51,69 +51,69 @@ const ShowcaseProducts2 = () => {
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
       />
 
-      {dataSapatella
-        .find((e) => e.showcaseProducts1)
-        .showcaseProducts1.map(
-          ({ title }, index) =>
-            title && (
-              <div
-                key={index}
-                className="container-card-vitrini-products-2-title"
-              >
-                <h2>{title}</h2>
-              </div>
-            )
-        )}
-
-      <Slider {...settings}>
+      <div className="container-vitrini-pruducts-2-main">
         {dataSapatella
           .find((e) => e.showcaseProducts1)
           .showcaseProducts1.map(
-            (
-              {
-                image,
-                discount,
-                heartIcon,
-                name,
-                description,
-                currentPrice,
-                oldPrice,
-              },
-              index
-            ) => (
-              <div key={index} className="container-card-vitrini-products-2">
-                <div className="container-card-vitrini-products-2-discount">
-                  <p>{discount}</p>
+            ({ title }, index) =>
+              title && (
+                <div
+                  key={index}
+                  className="container-card-vitrini-products-2-title"
+                >
+                  <h2>{title}</h2>
                 </div>
-                <img
-                  className="container-card-vitrini-products-2-img-heart"
-                  src={heartIcon}
-                  alt="Icone de um coração"
-                />
-
-                <div className="container-card-vitrini-products-2-img">
-                  <img src={image} alt="Imagem do produto" />
-                </div>
-
-                <div className="container-card-vitrini-products-2-description">
-                  <div className="container-card-vitrini-products-2-description-name">
-                    <p>{name}</p>
-                  </div>
-                  <div className="container-card-vitrini-products-2-description-price">
-                    <p className="container-card-vitrini-products-1-descrption-price-current-price">
-                      {currentPrice}
-                    </p>
-
-                    <p className="container-card-vitrini-products-1-descrption-price-old-price">
-                      {oldPrice}
-                    </p>
-                  </div>
-                  <p className="container-option-the-payment">{description}</p>
-                </div>
-              </div>
-            )
+              )
           )}
-      </Slider>
+        <Slider {...settings}>
+          {dataSapatella
+            .find((e) => e.showcaseProducts1)
+            .showcaseProducts1.map(
+              (
+                {
+                  image,
+                  discount,
+                  heartIcon,
+                  name,
+                  description,
+                  currentPrice,
+                  oldPrice,
+                },
+                index
+              ) => (
+                <div key={index} className="container-card-vitrini-products-2">
+                  <div className="container-card-vitrini-products-2-discount">
+                    <p>{discount}</p>
+                  </div>
+                  <img
+                    className="container-card-vitrini-products-2-img-heart"
+                    src={heartIcon}
+                    alt="Icone de um coração"
+                  />
+                  <div className="container-card-vitrini-products-2-img">
+                    <img src={image} alt="Imagem do produto" />
+                  </div>
+                  <div className="container-card-vitrini-products-2-description">
+                    <div className="container-card-vitrini-products-2-description-name">
+                      <p>{name}</p>
+                    </div>
+                    <div className="container-card-vitrini-products-2-description-price">
+                      <p className="container-card-vitrini-products-1-descrption-price-current-price">
+                        {currentPrice}
+                      </p>
+                      <p className="container-card-vitrini-products-1-descrption-price-old-price">
+                        {oldPrice}
+                      </p>
+                    </div>
+                    <p className="container-option-the-payment">
+                      {description}
+                    </p>
+                  </div>
+                </div>
+              )
+            )}
+        </Slider>
+      </div>
     </section>
   );
 };

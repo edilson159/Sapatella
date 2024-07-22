@@ -1,4 +1,12 @@
 .container-junction {
+  border-bottom: 1px solid;
+
+  border-image-source: linear-gradient(0deg, #b0b0b0, #b0b0b0),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+
   padding: 48px 0px 48px 56px;
 }
 

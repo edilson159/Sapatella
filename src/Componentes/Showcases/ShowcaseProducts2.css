@@ -162,7 +162,7 @@
 @media (min-width: 1025px) {
   .container-vitrini-products-2 {
     position: absolute;
-    width: 630px;
+    width: 50%;
     right: 0px;
     top: 17px;
     margin: unset;
