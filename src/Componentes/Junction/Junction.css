@@ -13,7 +13,7 @@
 .container-card-junction {
   display: flex;
   justify-content: space-between;
-  max-width: 90%;
+  max-width: 1280px;
 }
 
 .container-junction-social {

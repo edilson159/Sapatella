@@ -127,7 +127,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 8px;
+  gap: 24px;
 }
 
 .container-card-showcase-exhibition1
@@ -200,6 +200,6 @@ a {
   }
 
   .container-card-showcase-exhibition1-p3-2-description {
-    padding-bottom: 12px;
+    padding-bottom: 7px;
   }
 }
